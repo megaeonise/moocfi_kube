@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: logoutput
+  name: the-project-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: logoutput
+      app: the-project-dep
   template:
     metadata:
       labels:
-        app: logoutput
+        app: the-project-dep
     spec:
       containers:
-        - name: logoutput
-          image: megaeonise/logoutput:v2
+        - name: the-project-dep
+          image: megaeonise/the_project:v1
           resources:
             limits:
               memory: 512Mi
