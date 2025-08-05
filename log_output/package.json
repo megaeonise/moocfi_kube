@@ -1,0 +1,27 @@
+{
+  "name": "log_output",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.ts",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@swc/core": "^1.13.3",
+    "@swc/helpers": "^0.5.17",
+    "@types/node": "^24.2.0",
+    "nodemon": "^3.1.10",
+    "regenerator-runtime": "^0.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}
