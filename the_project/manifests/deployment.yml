@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: the-project-dep
-          image: megaeonise/the_project:v1
+          image: megaeonise/the_project:v2
           resources:
             limits:
               memory: 512Mi
