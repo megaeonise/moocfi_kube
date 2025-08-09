@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: logoutput
-          image: megaeonise/logoutput:v2
+          image: megaeonise/logoutput:v4
           resources:
             limits:
               memory: 512Mi

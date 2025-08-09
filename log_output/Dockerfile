@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+ENV PORT=3001
 
 COPY . .
 
