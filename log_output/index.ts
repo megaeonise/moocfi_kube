@@ -1,18 +1,17 @@
 const express = require("express");
 const app = express();
-const { v4: uuidv4 } = require("uuid");
+const fs = require("node:fs");
 
 const { PORT } = require("./util/config");
-const start_date = new Date();
-let log = `${start_date.toISOString()}: ${uuidv4()}`;
-
-setInterval(() => {
-  const date = new Date();
-  log = `${date.toISOString()}: ${uuidv4()}`;
-}, 5000);
 
 app.get("/", (_req: any, res: any) => {
-  res.send(log);
+  try {
+    const data = fs.readFileSync("./files/log.txt", "utf8");
+    res.send(data);
+  } catch (err) {
+    console.error(err);
+    res.send(err);
+  }
 });
 
 const start = () => {

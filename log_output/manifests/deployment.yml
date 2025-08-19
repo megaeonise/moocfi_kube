@@ -12,9 +12,26 @@ spec:
       labels:
         app: logoutput
     spec:
+      volumes:
+        - name: shared-log
+          emptyDir: {}
       containers:
         - name: logoutput
-          image: megaeonise/logoutput:v4
+          image: megaeonise/logoutput:v9
+          volumeMounts:
+            - name: shared-log
+              mountPath: /usr/src/app/files
+          resources:
+            limits:
+              memory: 512Mi
+            requests:
+              memory: 256Mi
+              cpu: "0.2"
+        - name: logwriter
+          image: megaeonise/logwriter:v6
+          volumeMounts:
+            - name: shared-log
+              mountPath: /usr/src/app/files
           resources:
             limits:
               memory: 512Mi
