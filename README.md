@@ -12,4 +12,5 @@
 - [1.6.](https://github.com/megaeonise/moocfi_kube/tree/1.6/the_project)
 - [1.7.](https://github.com/megaeonise/moocfi_kube/tree/1.7/log_output)
 - [1.8.](https://github.com/megaeonise/moocfi_kube/tree/1.8/the_project)
-- [1.9.](https://github.com/megaeonise/moocfi_kube/tree/1.8/ping_pong)
+- [1.9.](https://github.com/megaeonise/moocfi_kube/tree/1.9/ping_pong)
+- [1.10.](https://github.com/megaeonise/moocfi_kube/tree/1.10/log_output)
